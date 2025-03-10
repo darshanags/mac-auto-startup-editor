@@ -12,7 +12,7 @@ buildapp:
 	@echo 'tell application "Terminal"' >> out/bin/script.applescript
 	@echo '    do script quoted form of binaryPath & "; kill -9 $$(ps -p $$PPID -o ppid=)"' >> out/bin/script.applescript
 	@echo '    activate' >> out/bin/script.applescript
-	@echo '    set bounds of front window to {100, 100, 650, 500}' >> out/bin/script.applescript
+	@echo '    set bounds of front window to {100, 100, 650, 480}' >> out/bin/script.applescript
 	@echo 'end tell' >> out/bin/script.applescript
 	osacompile -o out/app/Mase.app out/bin/script.applescript
 	cp out/bin/${BINARY_NAME} out/app/Mase.app/Contents/MacOS/${BINARY_NAME}

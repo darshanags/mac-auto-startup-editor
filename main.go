@@ -180,8 +180,6 @@ func main() {
 
 	fmt.Printf("\033[1;34mWelcome to M.A.S.E - Mac Auto Startup Editor.\033[0m\n\n")
 
-	fmt.Printf("This program utilizes the nvram command to set your auto startup preference - as this command runs under elevated privileges, it will require you to provide your password.\n\n")
-
 	if !isCompatibleDevice() {
 		fmt.Printf("\n\033[1;33mYour device is not compatible.\033[0m")
 		fmt.Print("\nExiting program...\n")
